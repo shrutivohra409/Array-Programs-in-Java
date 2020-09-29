@@ -1,0 +1,27 @@
+
+package evenoddcount;
+import java.util.Scanner;
+public class EvenOddCount {
+    public static void main(String[] args) {
+      Scanner obj=new Scanner(System.in);
+      int i,even=0,odd=0;
+      int arr[]=new int [10];
+      for(i=0;i<10;i++)
+      {
+          arr[i]=obj.nextInt();
+          
+      }
+      for(i=0;i<10;i++)
+      {
+          if(arr[i]%2==0)
+              even++;
+          else
+              odd++;
+          
+      }
+      System.out.println("number of even elements="+" "+even);
+       System.out.println("number of odd elements="+" "+odd);
+      
+    }
+    
+}
