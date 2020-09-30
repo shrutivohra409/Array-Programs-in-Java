@@ -1,0 +1,26 @@
+import java.util.Scanner;
+public class NegativeElements {
+    public static void main(String[] args) {
+       int []a=new int[5];
+       int i,negative=0;
+       Scanner obj=new Scanner(System.in);
+       for(i=0;i<a.length;i++)
+       {
+           a[i]=obj.nextInt();
+           
+       }
+       for(int x:a)
+       {
+           if(x<0)
+           {
+               System.out.println(x+ " " + "is negative");
+               negative++;
+           }
+       }
+        
+        
+     System.out.println(negative);
+        
+    }
+    
+}
